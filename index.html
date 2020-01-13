@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Minha primeira tentativa de codificar um jogo usando html, css e jQuery. 
+É bastante aleatório no que diz respeito aos jogos. Só queria ver se eu conseguiria. 
+Enfim ... divirta-se! :)
+Os recursos de imagem fazem parte dos "mosaicos de prototipagem de jogos miraculosamente 
+flexíveis da Danc -->
+
+<div class="area-jogo">
+    <img src="img/avatar.png" class="avatar" />
+    <div class="bolha"></div>
+
+    <div class="gameBoard">
+        <div class="gameover">
+            <h3>Placar Final</h3>
+            <span class="final-placar"></span><br/>
+                <span>mateus</span>
+        </div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+        <div class="piso"></div>
+    </div>
+    <div class="barra-lateral">
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="pedra piso"></div>
+        <div class="barra-placar">
+            <h2 class="fancy-text">Placar</h2>
+            <span class="placar fancy-text"></span>
+        <div class="itens">
+            <ul class="pegar-itens">
+                <li><span class="gemContador">0</span> x  <img src="img/gem.png" /></li>
+                <li><span class="estrelaContador">0</span> x <img src="img/estrela.png" /></li>
+            </ul>
+        </div>
+        </div>
+        <a href="javascript:void(0)" class="button fancy-text restart">Restart</a>
+    </div>
+</div>
+
+<!-- Preload Game Sounds -->
+<audio preload="auto" id="pop-1">
+    <source src="sons/pop1.mp3"></source>
+</audio>
+
+<audio preload="auto" id="pop-2">
+    <source src="sons/pop2.mp3"></source>
+</audio>
+
+<audio preload="auto" id="som-gema">
+    <source src="sons/gem.mp3"></source>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
